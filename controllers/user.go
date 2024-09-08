@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/golang-jwt/jwt"
+	"github.com/golang-jwt/jwt/v5"
 	"github.com/labstack/echo/v4"
 	"github.com/repoleved08/blog/config"
 	"github.com/repoleved08/blog/models"
@@ -24,7 +24,7 @@ func Register(c echo.Context) error {
 
 func Login(c echo.Context) error {
 	var input models.User
-	if err := c.Bind(&input); err.Error != nil {
+	if err := c.Bind(&input); err != nil {
 		return c.JSON(http.StatusBadRequest, echo.Map{"error": err.Error()})
 	}
 	var user models.User
