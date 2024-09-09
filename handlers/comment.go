@@ -27,3 +27,12 @@ func GetCommentByD(c echo.Context) error {
 }
 
 // func UpdateComent(c echo.Context) (error)
+func DeleteComment(c echo.Context) (error) {
+	id := c.Param("id")
+	var comment models.Comment
+	if err := config.DB.Find(&comment, id); err != nil {
+		return c.JSON(http.StatusNotFound, echo.Map{"error": "comment not found"})
+	}
+	config.DB.Delete(&comment)
+	return c.NoContent(http.StatusNoContent)
+}

@@ -72,6 +72,7 @@ This is a RESTful API built with Golang, GORM, and Echo. It includes JWT-based a
 
 ## Folder Structure
 
+```bash
 .
 ├── config             # Configuration files (e.g., database configuration)
 │   └── database.go
@@ -100,6 +101,7 @@ This is a RESTful API built with Golang, GORM, and Echo. It includes JWT-based a
 └── go.mod             # Go module definition
 └── go.sum             # Go module checksum
 
+```
 ## API Endpoints
 
 ### Authentication
