@@ -176,8 +176,12 @@ http://localhost:8080/swagger/index.html
 
 This project is open-source and available under the [MIT License](LICENSE).
 ```
-## Contact
 
-For any questions or feedback, feel free to reach out to me at [techxtrasol.design@gmail.com](mailto: techxtrasol.design@gmail.com).
-```
+
+ ## Contact
+- [LinkedIn](https://www.linkedin.com/in/norman-bii-87382722a)
+- [Twitter](https://x.com/normangeek1)
+- [GitHub](https://github.com/repoleved08)
+- [Email](mailto:techxtrasol.design@gmail.com)
+- [Website](https://techxtrasol.com)
 
