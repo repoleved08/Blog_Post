@@ -41,7 +41,7 @@ This is a RESTful API built with Golang, GORM, and Echo. It includes JWT-based a
     Create a `.env` file in the root directory with the following structure:
 
     ```env
-    DB_DSN=host=localhost user=gouser password=Norman@123.9 dbname=blog_post_db port=5432 sslmode=disable
+    DB_DSN=host=localhost user=postgres password=Your@Paswword dbname=blog_post_db port=5432 sslmode=disable
     JWT_SECRET=thisismysecretjwttokenfromtechxtrasol
     APP_DOMAIN=localhost:8080
     ```
@@ -72,7 +72,6 @@ This is a RESTful API built with Golang, GORM, and Echo. It includes JWT-based a
 
 ## Folder Structure
 
-```bash
 .
 ├── config             # Configuration files (e.g., database configuration)
 │   └── database.go
@@ -175,8 +174,8 @@ http://localhost:8080/swagger/index.html
 
 This project is open-source and available under the [MIT License](LICENSE).
 ```
-
 ## Contact
 
 For any questions or feedback, feel free to reach out to me at [techxtrasol.design@gmail.com](mailto: techxtrasol.design@gmail.com).
+```
 
