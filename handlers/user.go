@@ -19,6 +19,17 @@ func sendErrorResponse(c echo.Context, statusCode int, message string) error {
 	return c.JSON(statusCode, echo.Map{"error": message})
 }
 
+
+// @Summary Register a new user
+// @Description Register a new user
+// @Tags users
+// @Accept json
+// @Produce json
+// @Param registerDTO body dto.RegisterDTO true "Register DTO"
+// @Success 201 {object} models.User
+// @Failure 400 {object} map[string]string
+// @Failure 500 {object} map[string]string
+// @Router /api/auth/register [post]
 func Register(c echo.Context) error {
 	var registerDTO dto.RegisterDTO
 	if err := c.Bind(&registerDTO); err != nil {
@@ -52,6 +63,17 @@ func Register(c echo.Context) error {
 	return c.JSON(http.StatusCreated, user)
 }
 
+// @Summary Login a user
+// @Description Login a user
+// @Tags users
+// @Accept json
+// @Produce json
+// @Param loginDTO body dto.LoginDTO true "Login DTO"
+// @Success 200 {object} map[string]string
+// @Failure 400 {object} map[string]string
+// @Failure 401 {object} map[string]string
+// @Failure 500 {object} map[string]string
+// @Router /api/auth/login [post]
 
 func Login(c echo.Context) error {
 	// Define a LoginDTO to validate input
