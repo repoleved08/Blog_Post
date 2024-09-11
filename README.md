@@ -1,7 +1,7 @@
 # Golang REST API with GORM, Echo, PostgreSQL, JWT Authentication, and Roles
 
 This is a RESTful API built with Golang, GORM, and Echo. It includes JWT-based authentication, role-based access control (admin, editor, user), and supports CRUD operations for both posts and comments. Swagger is used for API documentation.
-
+![alt text](image.png)
 ## Features
 
 - **User Authentication**: JWT-based authentication with secure password hashing using `bcrypt`.

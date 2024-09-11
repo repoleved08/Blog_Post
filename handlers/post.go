@@ -55,8 +55,6 @@ func CreatePost(c echo.Context) error {
 	return c.JSON(http.StatusCreated, post)
 }
 
-
-
 // swagger documenation
 //	@Summary		Get all posts
 //	@Description	Get all posts
