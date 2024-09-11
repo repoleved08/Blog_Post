@@ -74,7 +74,6 @@ func Register(c echo.Context) error {
 // @Failure 401 {object} map[string]string
 // @Failure 500 {object} map[string]string
 // @Router /api/auth/login [post]
-
 func Login(c echo.Context) error {
 	// Define a LoginDTO to validate input
 	var loginDTO dto.LoginDTO
